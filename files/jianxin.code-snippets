@@ -15,11 +15,24 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"rtfsc": {
+		"scope": "",
+		"prefix": "sc",
+		"body": [
+			"",
+			"// [rtfsc]",
+			"// $1",
+			"// [end]"
+		],
+		"description": "源码解读注释"
+	},
 	"describe source code": {
-		"scope": "go,java,javascript,typescript",
+		"scope": "",
 		"prefix": "desc",
 		"body": [
-			"/**【rtfsc】",
+			"",
+			"/**",
+			" * [rtfsc]",
 			" * 主题: ${1:一个什么主题}",
 			" * 摘要: ${2:简单描述下}",
 			" * 功能: $0",
@@ -28,12 +41,13 @@
 			" * 应用: ",
 			" * ",
 			" * ",
+			" * [end]",
 			" */",
 			""
 		],
-		"description": "源码阅读"
+		"description": "describe source code"
 	},
-    "console log": {
+	"console log": {
 		"scope": "javascript,typescript,vue",
 		"prefix": "logc",
 		"body": [
@@ -41,5 +55,15 @@
 			"$2"
 		],
 		"description": "describe source code"
+	},
+	"error is not nil": {
+		"scope": "go",
+		"prefix": ".nn",
+		"body": [
+			"if $1 != nil {",
+			"    $0",
+			"}"
+		],
+		"description": "is not nil"
 	}
 }
