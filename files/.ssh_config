@@ -1,0 +1,14 @@
+
+Host localhost
+  HostName localhost
+
+Host router-local
+  HostName 192.168.74.1
+  User root
+
+Host *
+    KeepAlive yes
+    ServerAliveInterval 60
+    ControlMaster auto
+    ControlPersist yes
+    ControlPath ~/.ssh/socks/%h-%p-%r
