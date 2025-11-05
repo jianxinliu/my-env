@@ -1,3 +1,21 @@
+# https://github.com/Lissy93/Brewfile/blob/master/Brewfile
+
+#############################################################
+# ~/.Brewfile - Software Installs for MacOS                 #
+#                                                           #
+# List of packages to be installed / updated via Homebrew   #
+# Apps are sorted by category, and arranged alphabetically  #
+# Be sure to delete / comment out anything you do not need  #
+# Usage, run: $ brew bundle --global --file $HOME/.Brewfile #
+# Source GH repository: https://github.com/lissy93/Brewfile #
+# See brew docs for more info: https://docs.brew.sh/Manpage #
+#                                                           #
+# License: MIT © Alicia Sykes 2022 <https://aliciasykes.com>#
+#############################################################
+
+# Options
+cask_args appdir: '~/Applications', require_sha: true
+
 # brew bundle to install all
 # run brew bundlel
 
@@ -5,16 +23,36 @@
 brew "jq"
 brew "grpcurl"
 brew "ansible"
+brew 'docker'         # Containers
 brew "git"
 brew "node"
 brew "pnpm"
 brew "npm"
+brew 'nvm'            # Switching node versions
 brew "zsh"
+brew 'python'         # Python interpreter
 brew "zsh-autosuggestions"
 brew "zsh-completions"
 brew "zsh-syntax-highlightinge"
 brew "go"
 brew "tldr"
+brew "openjdk@8"
+brew "openjdk@17"
+brew 'diff-so-fancy' # Readable file compares (better diff)
+brew 'tree'         # Directory listings as tree structure
+brew 'trash-cli'    # Record and restore removed files
+brew 'openssl'        # Cryptography and SSL/TLS Toolkit
+
+# CLI Monitoring and Performance Apps
+brew 'bmon'         # Bandwidth utilization monitor 
+brew 'ctop'         # Container metrics and monitoring
+brew 'dog'          # DNS lookup client (better dig)
+brew 'bpytop'       # Resource monitoring (like htop)
+brew 'dua-cli'      # Disk usage analyzer and monitor (better du)
+brew 'glances'      # Resource monitor + web and API
+brew 'goaccess'     # Web log analyzer and viewer
+brew 'gping'        # Interactive ping tool, with graph
+brew 'speedtest-cli' # Command line speed test utility
 
 # apps
 
@@ -22,3 +60,51 @@ cask "cursor"
 cask "warp"
 cask "medis"
 cask "orbstack"
+# Development Apps
+cask 'android-studio' # IDE for Android development
+brew 'gradle'         # Build automation for Java
+cask 'iterm2'         # Better terminal emulator
+cask 'postman'        # HTTP API testing app
+cask 'visual-studio-code' # Code editor
+cask 'wireshark'      # Network analyzer + packet capture
+
+
+
+
+# Mac OS Quick-Look Plugins
+cask 'qlcolorcode'    # QL for code with highlighting
+cask 'qlimagesize'    # QL for size info for images
+cask 'qlmarkdown'     # QL for markdown files
+cask 'qlprettypatch'  # QL for patch / diff files
+cask 'qlstephen'      # QL for dev text files
+cask 'qlvideo'        # QL for video formats
+cask 'quicklook-csv'  # QL for tables in CSV format
+cask 'quicklook-json', args: { require_sha: false } # QL for JSON, with trees
+cask 'quicklookapk',   args: { require_sha: false } # QL for Android APKs
+cask 'webpquicklook',  args: { require_sha: false } # QL for WebP image files
+
+
+# Mac OS Mods and Imrovments
+cask 'alt-tab'        # Much better alt-tab window switcher
+cask 'anybar'         # Custom programmatic menubar icons
+cask 'copyq'          # Clipboard manager (cross platform)
+cask 'espanso'        # Live text expander (cross-platform)
+cask 'finicky'        # Website-specific default browser
+cask 'hiddenbar'      # Hide / show annoying menubar icons
+brew 'iproute2mac'    # MacOS port of netstat and ifconfig
+brew 'lporg'          # Backup and restore launchpad layout
+brew 'm-cli'          # All in one MacOS management CLI app
+cask 'mjolnir'        # Util for loading Lua automations
+cask 'openinterminal' # Finder button, opens directory in terminal
+cask 'raycast', args: { require_sha: false }  # Spotlight alternative
+cask 'santa'          # Binary authorization for security
+cask 'shottr'         # Better screenshot utility
+brew 'skhd'           # Hotkey daemon for macOS
+cask 'stats'          # System resource usage in menubar
+brew 'yabai'          # Tiling window manager
+
+
+# Mac OS Utility Apps
+cask 'coteditor'      # Just a simple plain-text editor
+cask 'little-snitch'  # Firewall app viewing / blocking traffic
+cask 'keka'           # File archiver and extractor
