@@ -1,4 +1,5 @@
 # brew bundle to install all
+# run brew bundlel
 
 
 brew "jq"
@@ -19,4 +20,5 @@ brew "tldr"
 
 cask "cursor"
 cask "warp"
-cask "google-chrome"
+cask "medis"
+cask "orbstack"
