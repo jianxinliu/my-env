@@ -1,0 +1,22 @@
+# brew bundle to install all
+
+
+brew "jq"
+brew "grpcurl"
+brew "ansible"
+brew "git"
+brew "node"
+brew "pnpm"
+brew "npm"
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
+brew "zsh-syntax-highlightinge"
+brew "go"
+brew "tldr"
+
+# apps
+
+cask "cursor"
+cask "warp"
+cask "google-chrome"
