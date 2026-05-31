@@ -54,6 +54,23 @@ brew 'goaccess'     # Web log analyzer and viewer
 brew 'gping'        # Interactive ping tool, with graph
 brew 'speedtest-cli' # Command line speed test utility
 
+# AI CLI & Tools
+brew 'ollama'         # Run open-source LLMs locally
+brew 'llm'            # CLI for interacting with LLMs (by Simon Willison)
+brew 'aider'          # AI pair programming in your terminal
+# NOTE: some AI CLIs ship via npm, install with:
+#   npm i -g @anthropic-ai/claude-code   # Claude Code CLI
+#   npm i -g @google/gemini-cli          # Gemini CLI
+
+# AI Apps
+cask 'chatgpt'        # OpenAI ChatGPT desktop app
+cask 'claude'         # Anthropic Claude desktop app
+cask 'cherry-studio'  # Multi-provider LLM desktop client
+cask 'lm-studio'      # Discover, download and run local LLMs
+cask 'jan'            # Offline ChatGPT alternative (local LLMs)
+cask 'chatbox'        # Desktop client for ChatGPT/Claude and more
+cask 'ollamac'        # Native macOS UI for Ollama
+
 # apps
 
 cask "cursor"
