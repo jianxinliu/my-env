@@ -50,6 +50,30 @@ singbox（SMF）
 clashx
 
 
+## AI 软件 & 工具
+
+### 桌面客户端
+chatgpt              # OpenAI 官方桌面端
+claude               # Anthropic 官方桌面端
+cherry studio        # 多模型聚合客户端
+chatbox              # 多模型桌面客户端
+lm studio            # 本地大模型运行/管理
+jan                  # 离线本地大模型客户端
+ollama / ollamac     # 本地大模型运行环境 + GUI
+
+### CLI 工具
+claude code          # npm i -g @anthropic-ai/claude-code
+gemini cli           # npm i -g @google/gemini-cli
+llm                  # brew install llm
+aider                # brew install aider（AI 结对编程）
+ollama               # brew install ollama
+
+### 编辑器 / IDE 插件
+cursor               # AI 优先的代码编辑器
+github copilot       # VSCode / JetBrains 插件
+codeium / continue   # 免费 AI 补全插件
+
+
 
 
 Brewfile:
